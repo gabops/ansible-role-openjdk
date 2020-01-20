@@ -1,4 +1,0 @@
----
-- name: Add webupd8team ppa
-  apt_repository:
-    repo: 'ppa:webupd8team/java'

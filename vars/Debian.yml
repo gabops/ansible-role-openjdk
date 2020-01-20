@@ -1,0 +1,10 @@
+---
+openjdk_jre_packages:
+  6:
+    - ""
+  7:
+    - ""
+  8:
+    - openjdk-8-jre
+  11:
+    - openjdk-11-jre

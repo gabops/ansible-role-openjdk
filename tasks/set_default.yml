@@ -1,7 +1,0 @@
----
-- name: Set installed Java as the default version
-  apt:
-    name: oracle-java8-set-default
-    state: present
-    update_cache: yes
-  when: set_oracle_java_as_default|bool == True

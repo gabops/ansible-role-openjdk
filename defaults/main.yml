@@ -1,4 +1,2 @@
 ---
-# defaults file for ansible-role-java
-java_version: 8
-set_oracle_java_as_default: True
+openjdk_version: 11

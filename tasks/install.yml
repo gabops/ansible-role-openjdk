@@ -1,0 +1,11 @@
+---
+- name: Install openjdk jre (RedHat)
+  yum:
+    name: "{{ openjdk_jre_packages[openjdk_jre_version] }}"
+  when: ansible_os_family == "RedHat"
+
+- name: Install openjdk jre (Debian)
+  apt:
+    name: "{{ openjdk_jre_packages[openjdk_jre_version] }}"
+    updatecache: true
+  when: ansible_os_family == "Debian"

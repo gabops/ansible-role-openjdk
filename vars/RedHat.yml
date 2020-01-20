@@ -1,0 +1,10 @@
+---
+openjdk_jre_packages:
+  6:
+    - java-1.6.0-openjdk
+  7:
+    - java-1.7.0-openjdk
+  8:
+    - java-1.8.0-openjdk
+  11:
+    - java-11-openjdk
