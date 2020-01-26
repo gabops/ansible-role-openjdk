@@ -2,9 +2,13 @@
 - name: Converge
   hosts: all
   tasks:
+    - name: Set version for Debian 10
+      set_fact:
+        java_openjdk_version: 11
+      when: ansible_distribution == "Debian" and ansible_distribution_major_version == "10"
+
     - name: Install Java Openjdk
       vars:
-        java_openjdk_version: 8
         java_openjdk_tool_options: -Xms64M -Xmx256M -Djava.awt.headless=true
       import_role:
         name: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') | basename }}"
