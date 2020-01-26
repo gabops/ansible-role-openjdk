@@ -7,6 +7,11 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_java_installed(host):
-    c = host.run("java -version 2>&1 | grep 'openjdk version'")
+    distro = host.system_info.distribution
+    version = host.system_info.release
 
-    assert "1.8" in c.stdout
+    c = host.run("java -version 2>&1 | grep 'openjdk version'")
+    if distro == "debian" and version.startswith("10"):
+        assert "11.0" in c.stdout
+    else:
+        assert "1.8" in c.stdout
