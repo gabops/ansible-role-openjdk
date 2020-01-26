@@ -25,13 +25,13 @@ Role Variables
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | CentOS 6       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
 | CentOS 7       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
-| CentOS 8       | :x: | :x: | :heavy_check_mark: |  |  |  | :x: | :x: | :x: |
+| CentOS 8       | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
 | Amazon Linux 1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
 | Amazon Linux 2 | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
 | Debian 9       | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
 | Debian 10      | :x: | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
 | Ubuntu 16.04   | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Ubuntu 18.04   | :x: |     | :heavy_check_mark: |  |  |  | | | |
+| Ubuntu 18.04   | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 Dependencies
 ------------
