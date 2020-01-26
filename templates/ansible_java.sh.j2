@@ -1,0 +1,9 @@
+# {{ ansible_managed }}
+
+{% if java_openjdk_home != "" %}
+export JAVA_HOME="{{ java_openjdk_home }}"
+{% endif %}
+
+{% if java_openjdk_options != "" %}
+export JAVA_OPTS="{{ java_openjdk_options }}"
+{% endif %}
