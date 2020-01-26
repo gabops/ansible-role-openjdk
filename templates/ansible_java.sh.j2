@@ -4,6 +4,6 @@
 export JAVA_HOME="{{ java_openjdk_home }}"
 {% endif %}
 
-{% if java_openjdk_options != "" %}
-export JAVA_OPTS="{{ java_openjdk_options }}"
+{% if java_openjdk_tool_options != "" %}
+export JAVA_TOOL_OPTIONS="{{ java_openjdk_tool_options }}"
 {% endif %}

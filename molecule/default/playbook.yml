@@ -5,6 +5,6 @@
     - name: Install Java Openjdk
       vars:
         java_openjdk_version: 8
-        java_openjdk_options: -Xms128M -Xmx512M -Djava.io.tmpdir=$HOME/tmp
+        java_openjdk_tool_options: -Xms64M -Xmx256M -Djava.awt.headless=true
       import_role:
         name: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') | basename }}"
