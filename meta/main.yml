@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: openjdk
   author: Gabriel Suarez
-  description: Installs and configures Java OpenJDK.
+  description: Installs and configures OpenJDK.
   license: MIT
   min_ansible_version: 2.4
   platforms:
