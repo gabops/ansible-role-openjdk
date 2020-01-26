@@ -1,5 +1,5 @@
 ---
-openjdk_jre_packages:
+java_openjdk_packages:
   6:
     - java-1.6.0-openjdk
   7:
