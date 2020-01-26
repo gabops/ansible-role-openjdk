@@ -21,17 +21,17 @@ Role Variables
 ### Notes:
 - Keep in mind that not all versions defined on `java_openjdk_version` will be available on the system you are targeting. The next table may help you:
 
-| Distro | Version 6 | Version 7 | Version 8 | Version 9 | Version 10 | Version 11 |
-| --- | --- | --- | --- | --- | --- | --- |
-| CentOS 6       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
-| CentOS 7       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: |
-| CentOS 8       | :x: | :x: | :heavy_check_mark: |  |  |  |
-| Amazon Linux 1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
-| Amazon Linux 2 | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
-| Debian 9       | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
-| Debian 10      | :x: | :x: | :x: | :x: | :x: | :heavy_check_mark: |
-| Ubuntu 16.04   | :x: |     | :heavy_check_mark: |  |  |  |
-| Ubuntu 18.04   | :x: |     | :heavy_check_mark: |  |  |  |
+| Distro | Version 6 | Version 7 | Version 8 | Version 9 | Version 10 | Version 11 | Version 12 | Version 13 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| CentOS 6       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
+| CentOS 7       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
+| CentOS 8       | :x: | :x: | :heavy_check_mark: |  |  |  | :x: | :x: | :x: |
+| Amazon Linux 1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
+| Amazon Linux 2 | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
+| Debian 9       | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
+| Debian 10      | :x: | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
+| Ubuntu 16.04   | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Ubuntu 18.04   | :x: |     | :heavy_check_mark: |  |  |  | | | |
 
 Dependencies
 ------------
