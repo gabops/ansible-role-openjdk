@@ -19,7 +19,7 @@ Role Variables
 | java_openjdk_tool_options | "" | A set of options as string to be used as value for the `JAVA_TOOL_OPTIONS` environment variable. This allows you to set parameters globally. See `Example playbook` for more details. |
 
 ### Notes:
-- Keep in mind that not all versions defined on `java_openjdk_version` will be available on the system you are targeting. The next table may help you:
+- Keep in mind that not all versions you define on `java_openjdk_version` will be available on the repositories of the system you are targeting. The next table may help you:
 
 | Distro | Version 6 | Version 7 | Version 8 | Version 9 | Version 10 | Version 11 | Version 12 | Version 13 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
