@@ -1,32 +1,32 @@
 ---
-  galaxy_info:
-    role_name: openjdk
-    author: Gabriel Suarez
-    description: Installs and configures OpenJDK.
-    license: MIT
-    min_ansible_version: 2.4
-    platforms:
-      - name: EL
-        versions:
-          - 6
-          - 7
-          - 8
-      - name: Amazon
-        versions:
-          - all
-      - name: Amazon Linux 2
-        versions:
-          - any
-      - name: Debian
-        versions:
-          - jessie
-          - stretch
-          - buster
-      - name: Ubuntu
-        versions:
-          - xenial
-          - bionic
-    galaxy_tags:
-      - java
-  
-  dependencies: []
+galaxy_info:
+  role_name: openjdk
+  author: Gabriel Suarez
+  description: Installs and configures Java OpenJDK.
+  license: MIT
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+        - 8
+    - name: Amazon
+      versions:
+        - all
+    - name: Amazon Linux 2
+      versions:
+        - any
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+  galaxy_tags:
+    - java
+
+dependencies: []
