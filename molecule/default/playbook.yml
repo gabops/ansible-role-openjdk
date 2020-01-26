@@ -2,6 +2,9 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: Install openjdk
+    - name: Install Java Openjdk
+      vars:
+        java_openjdk_version: 8
+        java_openjdk_options: -Xms128M -Xmx512M -Djava.io.tmpdir=$HOME/tmp
       import_role:
         name: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') | basename }}"
