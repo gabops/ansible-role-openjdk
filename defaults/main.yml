@@ -1,2 +1,6 @@
 ---
-openjdk_version: 11
+java_openjdk_version: 11
+
+java_openjdk_home: ""
+
+java_openjdk_options: ""
