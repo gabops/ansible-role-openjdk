@@ -1,11 +1,16 @@
 ---
-- name: Install openjdk jre (RedHat)
+- name: Install Java OpenJDK (RedHat)
   yum:
-    name: "{{ openjdk_jre_packages[openjdk_jre_version] }}"
+    name: "{{ java_openjdk_packages[java_openjdk_version] }}"
   when: ansible_os_family == "RedHat"
 
-- name: Install openjdk jre (Debian)
+- name: Add repository (Ubuntu)
+  apt_repository:
+    repo: ppa:openjdk-r/ppa
+  when: ansible_distribution == "Ubuntu"
+
+- name: Install Java OpenJDK (Debian)
   apt:
-    name: "{{ openjdk_jre_packages[openjdk_jre_version] }}"
-    updatecache: true
+    name: "{{ java_openjdk_packages[java_openjdk_version] }}"
+    update_cache: true
   when: ansible_os_family == "Debian"
