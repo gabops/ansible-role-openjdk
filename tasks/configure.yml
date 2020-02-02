@@ -4,4 +4,4 @@
     src: ansible_java.sh.j2
     dest: /etc/profile.d/ansible_java.sh
     mode: "0644"
-  when: java_openjdk_home | length or java_openjdk_tool_options | length
+  when: openjdk_java_home | length or openjdk_java_tool_options | length

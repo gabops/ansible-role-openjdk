@@ -1,9 +1,9 @@
 # {{ ansible_managed }}
 
-{% if java_openjdk_home != "" %}
-export JAVA_HOME="{{ java_openjdk_home }}"
+{% if openjdk_java_home != "" %}
+export JAVA_HOME="{{ openjdk_java_home }}"
 {% endif %}
 
-{% if java_openjdk_tool_options != "" %}
-export JAVA_TOOL_OPTIONS="{{ java_openjdk_tool_options }}"
+{% if openjdk_java_tool_options != "" %}
+export JAVA_TOOL_OPTIONS="{{ openjdk_java_tool_options }}"
 {% endif %}

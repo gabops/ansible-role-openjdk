@@ -1,6 +1,6 @@
 ---
-java_openjdk_version: 8
+openjdk_version: 8
 
-java_openjdk_home: ""
+openjdk_java_home: ""
 
-java_openjdk_tool_options: ""
+openjdk_java_tool_options: ""

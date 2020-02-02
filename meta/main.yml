@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: java_openjdk
+  role_name: openjdk
   author: Gabriel Suarez
   description: Installs and configures OpenJDK.
   license: MIT

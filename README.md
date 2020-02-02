@@ -1,6 +1,6 @@
-gabops.java_openjdk
+gabops.openjdk
 =========
-[![Build Status](https://travis-ci.org/gabops/ansible-role-java-openjdk.svg?branch=master)](https://travis-ci.org/gabops/ansible-role-openjdk)
+[![Build Status](https://travis-ci.org/gabops/ansible-role-openjdk.svg?branch=master)](https://travis-ci.org/gabops/ansible-role-openjdk)
 
 Installs and configures OpenJDK.
 
@@ -14,12 +14,12 @@ Role Variables
 
 | Variable | Default value | Description |
 | :--- | :--- | :--- |
-| java_openjdk_version | 8 | Defines the OpenJDK version to install. |
-| java_openjdk_home | "" | Defines the value for the JAVA_HOME environment variable. |
-| java_openjdk_tool_options | "" | A set of options as string to be used as value for the `JAVA_TOOL_OPTIONS` environment variable. This allows you to set parameters globally. See `Example playbook` for more details. |
+| openjdk_version | 8 | Defines the OpenJDK version to install. |
+| openjdk_java_home | "" | Defines the value for the JAVA_HOME environment variable. |
+| openjdk_java_tool_options | "" | A set of options as string to be used as value for the `JAVA_TOOL_OPTIONS` environment variable. This allows you to set parameters globally. See `Example playbook` for more details. |
 
 ### Notes:
-- Keep in mind that not all versions you define on `java_openjdk_version` will be available on the repositories of the system you are targeting. The next table may help you:
+- Keep in mind that not all versions you define on `openjdk_version` will be available on the repositories of the system you are targeting. The next table may help you:
 
 | Distro | Version 6 | Version 7 | Version 8 | Version 9 | Version 10 | Version 11 | Version 12 | Version 13 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -44,10 +44,10 @@ Example Playbook
 ```yaml
 - hosts: servers
   vars:
-    java_openjdk_version: 11
-    java_openjdk_tool_options: -Xms64M -Xmx256M -Djava.awt.headless=true
+    openjdk_version: 11
+    openjdk_java_tool_options: -Xms64M -Xmx256M -Djava.awt.headless=true
   roles:
-      - role: gabops.java_openjdk
+      - role: gabops.openjdk
 ```
 
 License
