@@ -1,5 +1,5 @@
 ---
-- name: Install Java OpenJDK (RedHat)
+- name: Install OpenJDK (RedHat)
   yum:
     name: "{{ openjdk_packages[openjdk_version] }}"
   when: ansible_os_family == "RedHat"
@@ -9,7 +9,7 @@
     repo: ppa:openjdk-r/ppa
   when: ansible_distribution == "Ubuntu"
 
-- name: Install Java OpenJDK (Debian)
+- name: Install OpenJDK (Debian)
   apt:
     name: "{{ openjdk_packages[openjdk_version] }}"
     update_cache: true

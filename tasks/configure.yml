@@ -1,5 +1,5 @@
 ---
-- name: Configure Java OpenJDK
+- name: Configure OpenJDK
   template:
     src: ansible_java.sh.j2
     dest: /etc/profile.d/ansible_java.sh
